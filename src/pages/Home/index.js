@@ -62,6 +62,10 @@ class Home extends Component {
   }
 }
 
+Home.propTypes = {
+  addToCart: PropTypes.func.isRequired,
+};
+
 const mapDispatchToProps = (dispatch) =>
   bindActionCreators(CartActions, dispatch);
 
