@@ -61,6 +61,7 @@ class Home extends Component {
     );
   }
 }
+
 Home.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
