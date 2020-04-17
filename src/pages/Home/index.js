@@ -24,7 +24,7 @@ class Home extends Component {
 
     const data = response.data.map((product) => ({
       ...product,
-      priceFormatted: formatPrice(product.price),
+      priceFormated: formatPrice(product.price),
     }));
 
     this.setState({ products: data });
@@ -44,7 +44,7 @@ class Home extends Component {
           <li key={product.id}>
             <img src={product.image} alt={product.title} />
             <strong>{product.title}</strong>
-            <span>{product.priceFormatted}</span>
+            <span>{product.priceFormated}</span>
 
             <button
               type="button"
