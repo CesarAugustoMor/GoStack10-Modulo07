@@ -8,7 +8,7 @@ import { Container, Cart } from './styles';
 export default function Header() {
   return (
     <Container>
-      <Link>
+      <Link to="/">
         <img src={logo} alt="RocketShose" />
       </Link>
 
